@@ -7,3 +7,6 @@ To be able to run the script you need `curl`, `sendmail` and `jq` installed on t
 Scripts queries API for different offerings availability. Then with `jq` it narrows it down to specific KS-1 in North America.
 
 If affering available, then it sends e-mail to specified address.
+
+Script can be run by cronjob. To run it every 5 minutes code will be like:
+```*/5 * * * * /path/to/script/kimsufi-check.sh```
